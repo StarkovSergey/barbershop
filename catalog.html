@@ -10,26 +10,25 @@
 </head>
 
 <body class="page-body inner-page">
+
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <a class="main-header-logo" href="index.html">
         <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
       </a>
-      <div class="main-navigation-wrapper">
-        <div class="container">
-          <ul class="site-navigation">
-            <li><a href="blank.html">Информация</a></li>
-            <!--blank.html - для тех разделов, которых ещё нет на макетах - на эту страницу можно поставить шапку, футер и всё-->
-            <li><a href="blank.html">Новости</a></li>
-            <li><a href="price.html">Прайс-лист</a></li>
-            <li class="site-navigation-current"><a>Магазин</a></li>
-            <li><a href="blank.html">Контакты</a></li>
-          </ul>
-          <div class="user-navigation">
-            <a class="login-link" href="login.html">Вход</a>
-          </div>
-        </div>
+
+      <ul class="site-navigation">
+        <li><a href="blank.html">Информация</a></li>
+        <!--blank.html - для тех разделов, которых ещё нет на макетах - на эту страницу можно поставить шапку, футер и всё-->
+        <li><a href="blank.html">Новости</a></li>
+        <li><a href="price.html">Прайс-лист</a></li>
+        <li class="site-navigation-current"><a>Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+      <div class="user-navigation">
+        <a class="login-link" href="login.html">Вход</a>
       </div>
+
     </nav>
   </header>
 
@@ -49,35 +48,41 @@
     </ul>
 
     <section class="filter">
-      <h2>Фильтр товаров</h2>
+      <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <!--метод get => поиском можно будет поделиться (параметры будут в адресной строке)-->
         <fieldset>
           <legend>Производители:</legend>
           <ul>
-            <li>
+            <li class="filter-option">
               <!--!не работают чекбоксы с клавиатуры в Chrome- пробел их не отмечает. Почему?-->
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                name="baxter-of-california" id="filter-baxter-of-california" checked>
               <label for="filter-baxter-of-california">Baxter of California</label>
             </li>
-            <li>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mr-natty" id="filter-mr-natty">
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mr-natty"
+                id="filter-mr-natty">
               <label for="filter-mr-natty">Mr Natty</label>
             </li>
-            <li>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="filter-suavecito" checked>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito"
+                id="filter-suavecito" checked>
               <label for="filter-suavecito">Suavecito</label>
             </li>
-            <li>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="malin-goetz" id="filter-malin-goetz">
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="malin-goetz"
+                id="filter-malin-goetz">
               <label for="filter-malin-goetz">Malin+Goetz</label>
             </li>
-            <li>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murrays" id="filter-murrays">
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murrays"
+                id="filter-murrays">
               <label for="filter-murrays">Murray's</label>
             </li>
-            <li>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew" id="filter-american-crew" checked>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew"
+                id="filter-american-crew" checked>
               <label for="filter-american-crew">American Crew</label>
             </li>
           </ul>
@@ -85,16 +90,19 @@
         <fieldset>
           <legend>Группы товаров:</legend>
           <ul>
-            <li>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shave">
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
+                value="shaving" id="filter-shave">
               <label for="filter-shave">Бритвенные принадлежности </label>
             </li>
-            <li>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="filter-care" checked>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
+                value="hair-care" id="filter-care" checked>
               <label for="filter-care">Средства для ухода</label>
             </li>
-            <li>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories" id="filter-accessories">
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
+                value="accessories" id="filter-accessories">
               <label for="filter-accessories">Аксессуары</label>
             </li>
           </ul>
@@ -103,18 +111,19 @@
       </form>
     </section>
 
-    <section>
-      <h2>Список средств для ухода</h2>
+    <section class="catalog">
+      <h2 class="visually-hidden">Список средств для ухода</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
           <a href="product.html">
             <h3>
               <span class="catalog-category">Набор для путешествий</span>
-              «Baxter of California»</h3>
-            <p>
+              «Baxter of California»
+            </h3>
+            <p class="catalog-item-image">
               <!--todo: почему в <p>-->
               <img src="img/catalog/product-1.png" width="220" height="165"
-                alt="Набор для путешествий «Baxter of California»">
+								alt="Набор для путешествий «Baxter of California»">
             </p>
           </a>
           <p class="catalog-item-price">
@@ -126,8 +135,9 @@
           <a href="product.html">
             <h3>
               <span class="catalog-category">Увлажняющий кондиционер</span>
-              «Baxter of California»</h3>
-            <p>
+              «Baxter of California»
+            </h3>
+            <p class="catalog-item-image">
               <img src="img/catalog/product-2.png" width="220" height="165"
                 alt="Увлажняющий кондиционер «Baxter of California»">
             </p>
@@ -143,7 +153,7 @@
               <span class="catalog-category">Гель для волос</span>
               «SUAVECITO»
             </h3>
-            <p>
+            <p class="catalog-item-image">
               <img src="img/catalog/product-3.png" width="220" height="165" alt="Гель для волос «SUAVECITO»">
             </p>
           </a>
@@ -158,7 +168,7 @@
               <span class="catalog-category">Глина для укладки волос</span>
               «American crew»
             </h3>
-            <p>
+            <p class="catalog-item-image">
               <img src="img/catalog/product-4.png" width="220" height="165"
                 alt="Глина для укладки волос «American crew»">
             </p>
@@ -174,7 +184,7 @@
               <span class="catalog-category">Гель для волос</span>
               «AMERICAN CREW»
             </h3>
-            <p>
+            <p class="catalog-item-image">
               <img src="img/catalog/product-5.png" width="220" height="165" alt="Гель для волос «AMERICAN CREW»">
             </p>
           </a>
@@ -187,8 +197,9 @@
           <a href="product.html">
             <h3>
               <span class="catalog-category">Набор для бритья</span>
-              «Baxter of California»</h3>
-            <p>
+              «Baxter of California»
+            </h3>
+            <p class="catalog-item-image">
               <img src="img/catalog/product-6.png" width="220" height="165"
                 alt="Набор для бритья «Baxter of California»">
             </p>
@@ -205,16 +216,19 @@
           <a href="#">1</a>
         </li>
         <li class="pagination-item pagination-item-current"">
-          <a>2</a>
-        </li>
-        <li class="pagination-item">
+            <a>2</a>
+          </li>
+          <li class=" pagination-item">
           <a href="#">3</a>
         </li>
         <li class="pagination-item">
           <a href="#">4</a>
         </li>
+
       </ul>
     </section>
+
+
   </main>
 
   <footer class="page-footer main-footer">
@@ -270,9 +284,9 @@
     </div>
   </footer>
 
-  <section class="modal">
+  <section class="modal modal-login">
     <h2>Личный кабинет</h2>
-    <p>Введите пожалуйста свой логин и пароль</p>
+    <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
     <!-- Здесь будет форма логина -->
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
@@ -297,13 +311,17 @@
       </p>
       <button class="button" type="submit">Войти</button>
     </form>
-    <button type="button">Закрыть</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
-  <section class="modal">
-    <h2>Как до нас добраться</h2>
-    <!-- Здесь будет карта -->
-    <button type="button">Закрыть</button>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <!-- <img src="img/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="766" height="560"> -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.220269978938!2d30.31950369373568!3d59.93888667222528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1608540861541!5m2!1sen!2sru"
+      allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="766"
+      height="560"></iframe>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
 

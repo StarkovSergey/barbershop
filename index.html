@@ -9,12 +9,11 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 
-
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="img/logo-index.svg" width="371" height="155" alt="Логотип барбершопа «Бородинский»">
+        <img src="img/logo-index.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
       </a>
       <div class="main-navigation-wrapper">
         <div class="container">
@@ -144,14 +143,14 @@
         <h2 class="visually-hidden">Как нас найти</h2>
         <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
           АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-          <a href="blank.html">Как нас найти</a>
+          <a href="blank.html">Как нас найти?</a><br>
           Телефон: +7 (812) 666-02-66
         </p>
       </section>
 
       <section class="footer-social">
         <h2>Давайте дружить!</h2>
-        <ul>
+        <ul class="social-list">
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Вконтакте</span>
@@ -191,19 +190,19 @@
     </div>
   </footer>
 
-  <section class="modal">
+  <section class="modal modal-login">
     <h2>Личный кабинет</h2>
-    <p>Введите пожалуйста свой логин и пароль</p>
+    <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
     <!-- Здесь будет форма логина -->
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label class="visually-hidden" for="login-login">Логин</label>
-        <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com" required>
+        <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
         <!--type="email" также можно использовать без вреда дизайну-->
       </p>
       <p>
         <label class="visually-hidden" for="login-password">Пароль</label>
-        <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="********" required>
+        <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="********">
       </p>
       <p class="login-help">
         <label class="login-checkbox">
@@ -216,14 +215,19 @@
       </p>
       <button class="button" type="submit">Войти</button>
     </form>
-    <button type="button">Закрыть</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
-  <section class="modal">
-    <h2>Как до нас добраться</h2>
-    <!-- Здесь будет карта -->
-    <button type="button">Закрыть</button>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <!-- <img src="img/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="766" height="560"> -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.220269978938!2d30.31950369373568!3d59.93888667222528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1608540861541!5m2!1sen!2sru" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="766" height="560"></iframe>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
+
+  <script src="js/script.js"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>
